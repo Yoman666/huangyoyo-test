@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"> -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <div class="container">
+            <div class="btnspace">
+                <button type="button" class="button color1" @click="addData">Add</button>
+                <button type="button" class="button color2" @click="postData">Save</button>
+                <button type="button" class="button color3" @click="getData">Update</button>
+            </div>
+            <div style="overflow-x: auto;">
+            <table id="myTable" class="table"   width= 200px cellpadding= 5 cellspacing= 0> 
+                <thead > 
+                    <tr>
+                        <th>Name</th>
+                        <th>Birthday</th>
+                        <th>Salary</th>
+                        <th>Address</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-for="(data,id) in tempData" :key="key">
+                        <td><input type="text" v-model="data.Name"></td>
+                        <td><input type="date" v-model="data.DateOfBirth"></td>
+                        <td><input type="range" v-model="data.Salary" min="0" max="100000"></td>
+                        <td><input type="text" v-model="data.Address"></td>
+                    </tr>
+                    <!-- {{tempData}} -->
+                </tbody>
+            </table>
+        </div>
+        </div>
+    </div>
+
+
+    <script src="all.js" type="module"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.7/axios.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+*{
+    font-family: 微軟正黑體;
+    font-size: 16px;
+}
+#app{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    max-width: 1024px;
+    width: 90%;
+}
+
+.color1{
+    background-color: #0E6DFC;
+}
+.color2{
+    background-color: #1B845B;
+}
+.color3{
+    background-color: #D8383F;
+}
+
+.button{
+    border-radius: 5px;
+    padding: 10px 15px;
+    border: 0px ;
+    color: #fff;
+}
+.button:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.btnspace{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 20px 0px;
+}
+
+#myTable{
+    width: 100%;
+}
+#myTable thead tr th{
+    text-align: start;
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+}
+#myTable tbody tr td{
+    border-bottom: 1px solid #dddddd;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
