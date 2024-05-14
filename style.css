@@ -11,6 +11,7 @@
     width: 90%;
 }
 
+/* button */
 .color1{
     background-color: #0E6DFC;
 }
@@ -39,6 +40,7 @@
     margin: 20px 0px;
 }
 
+/* table */
 #myTable{
     width: 100%;
 }
