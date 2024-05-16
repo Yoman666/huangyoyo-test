@@ -47,7 +47,7 @@ const App = {
             // };
             axios.post(`http://nexifytw.mynetgear.com:45000/api/Record/SaveRecords`, this.tempData)
                 .then(res => {
-                    console.log(res);
+                    console.log(res.data);
                     alert('儲存成功');
                     this.getData();
                 })
