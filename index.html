@@ -19,26 +19,26 @@
                 <button type="button" class="button color3" @click="getData">Update</button>
             </div>
             <div style="overflow-x: auto;">
-            <table id="myTable" class="table" cellpadding= 5 cellspacing= 0> 
-                <thead > 
-                    <tr>
-                        <th>Name</th>
-                        <th>Birthday</th>
-                        <th>Salary</th>
-                        <th>Address</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr v-for="(data,id) in tempData" :key="id">
-                        <td><input type="text" v-model="data.Name"></td>
-                        <td><input type="date" v-model="data.DateOfBirth"></td>
-                        <td><input type="range" v-model="data.Salary" min="0" max="100000"></td>
-                        <td><input type="text" v-model="data.Address"></td>
-                    </tr>
-                    <!-- {{tempData}} -->
-                </tbody>
-            </table>
-        </div>
+                <table id="myTable" class="table" cellpadding=5 cellspacing=0>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Birthday</th>
+                            <th>Salary</th>
+                            <th>Address</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr v-for="(data,id) in tempData" :key="id">
+                            <td><input type="text" v-model="data.Name"></td>
+                            <td><input type="date" v-model="data.DateOfBirth"></td>
+                            <td><input type="range" v-model="data.Salary" min="0" max="100000"></td>
+                            <td><input type="text" v-model="data.Address"></td>
+                        </tr>
+                        <!-- {{tempData}} -->
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 
